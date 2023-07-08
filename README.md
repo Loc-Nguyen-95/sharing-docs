@@ -1,7 +1,7 @@
 # Serving static files in Express
-Để cung cấp những file như images, css files, JS files ... sử dụng express.static (buil-in middleware function in Express)
-`express.static(root, [option])`
-root: chỉ định root directory mà ở đó cung cấp static asset
+Để cung cấp những file như images, css files, JS files ... sử dụng express.static (buil-in middleware function in Express) </br>
+`express.static(root, [option])` </br>
+root: chỉ định root directory mà ở đó cung cấp static asset </br>
 [option]: static directory
 VD:
 
