@@ -1,6 +1,8 @@
 # Serving static files in Express
 Để cung cấp những file như images, css files, JS files ... sử dụng express.static (buil-in middleware function in Express) </br>
+</br>
 `express.static(root, [option])` </br>
+</br>
 root: chỉ định root directory mà ở đó cung cấp static asset </br>
 [option]: static directory </br>
 VD: </br>
@@ -21,9 +23,9 @@ VD: Thay vì 'public' có thể gọi thêm 'files' chẳng hạn </br>
 Chú ý: Path cung cấp cho express.static liên quan đến đường dẫn từ nơi mà bạn lauch ứng dụng node </br>
 Nếu bạn chạy express app từ một đường dẫn khác, thì sẽ an toàn hơn nếu như sử dụng đường dẫn tyệt đối (absolute path) </br>
 
-           const path = require('path') </br>
-           app.use( </br>
-                      '/static', </br>
-                      express.static(path.join(__dirname, 'public')) </br>
+           const path = require('path')
+           app.use(
+                      '/static',
+                      express.static(path.join(__dirname, 'public'))
            )
                       
