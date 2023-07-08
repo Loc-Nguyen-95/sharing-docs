@@ -20,6 +20,7 @@ VD: Thay vì 'public' có thể gọi thêm 'files' chẳng hạn </br>
 
 Chú ý: Path cung cấp cho express.static liên quan đến đường dẫn từ nơi mà bạn lauch ứng dụng node </br>
 Nếu bạn chạy express app từ một đường dẫn khác, thì sẽ an toàn hơn nếu như sử dụng đường dẫn tyệt đối (absolute path) </br>
+
            const path = require('path') </br>
            app.use( </br>
                       '/static', </br>
