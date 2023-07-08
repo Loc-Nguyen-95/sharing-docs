@@ -16,7 +16,7 @@ Chú ý: Tên của static directory không phải là 1 phần của url </br>
 
 VD: Thay vì 'public' có thể gọi thêm 'files' chẳng hạn </br>
 
-           app.use(express.static('files')) </br>
+           app.use(express.static('files'))
 
 Chú ý: Path cung cấp cho express.static liên quan đến đường dẫn từ nơi mà bạn lauch ứng dụng node </br>
 Nếu bạn chạy express app từ một đường dẫn khác, thì sẽ an toàn hơn nếu như sử dụng đường dẫn tyệt đối (absolute path) </br>
