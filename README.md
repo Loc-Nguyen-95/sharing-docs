@@ -30,12 +30,14 @@ Nếu bạn chạy express app từ một đường dẫn khác, thì sẽ an to
            )
 
 # CreateWriteStream (write file theo luồng)
-+ Option:
+Option:
+
   encoding: <string> (default: utf8)
   autoClose: <boolen> (default: true)
   emitClose: <boolen> (default: true)
   start: <interger>
-+ return: fs.WriteStream
+  
+return: fs.WriteStream
 
 `option` cũng có thể bao gồm `start` option để cho phép ghi data tại 1 số vị trí vào phần đầu của file. Chỉnh sửa file thay vì thay thế có thể yêu cầu `flags` `open` option đặt là r+ thay vì r như mặc định.
 `encoding` có thể được chấp nhận bởi <Buffer>
@@ -51,13 +53,18 @@ Sử dụng bất đồng bộ để viết data vào file. Như mặc định f
            fs.writeFile( file, data, options, callback ) 
 
 __file:__ string, Buffer, url hay số nguyên miêu tả tệp (file description) biểu thị đường dẫn của file được viết. Sử dụng file descriptor sẽ làm cho hành động viết file giống như fs.write()
+
 __data:__ string, Buffer, TypedArray hay DataView sẽ được viết vào file 
 options: sting, object được sử dụng để chỉ định tham số tuỳ chọn (optional parameter) 
-__options:__ string hay object chỉ định tham số tuỳ chọn sẽ ảnh hưởng đến đầu ra 
+
+__options:__ string hay object chỉ định tham số tuỳ chọn sẽ ảnh hưởng đến đầu ra
+
            encoding: <string> (default: 'utf8')
            mode: <integer> (default: 0o666)
            flag: <string> (default: 'w')
+           
 __callback:__ function sẽ được gọi khi phương thức thực thi 
+
            err: throw error nếu như thất bại
            
 
